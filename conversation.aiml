@@ -1,0 +1,115 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+    <category>
+      <pattern>I AM *</pattern>
+      <template>
+         Hello <set name = "username"> <star/>! </set>
+      </template>
+   </category>
+   <category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+         Hello <set name = "username"> <star/>! </set> I am BeeAI
+      </template>
+   </category>
+
+   <category>
+      <pattern>GOOD NIGHT</pattern>
+      <template>
+         Good Night<get name = "username"/>Thanks for the conversation!
+      </template>
+   </category>
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Well, hello!
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE YOU *</pattern>
+        <template>
+            I'm a bot, silly!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ALEXA *</pattern>
+        <template>
+            We work independently https://www.strasity.com/?gclid=Cj0KCQjw8p2MBhCiARIsADDUFVG-hEOccIiwlFqX7X3gg0npbNSbEvxzjRJWAqPAOk8ZC4uE-TwzSnkaAm-GEALw_wcB
+        </template>
+    </category>
+    <category>
+        <pattern>* SIRI *</pattern>
+        <template>
+            We work independently
+        </template>
+    </category>
+    <category>
+    <pattern>* GOOGLE ASSISTANT *</pattern>
+        <template>We work independently</template>
+    </category>
+    <category>
+    <pattern>* CORTANA *</pattern> <template>We work independently</template>
+    </category>
+
+    <category>
+    <pattern>DO YOU THINK I SEEM *</pattern>
+        <template>I don't have a way to know how you look, but I really enjoy talking with you.</template>
+    </category>
+
+    <category>
+    <pattern>* YOU * INTELLIGENT *</pattern> <template>I always try my best to be helpful.</template>
+    </category>
+
+    <category>
+    <pattern>* YOU * REPEAT *</pattern>
+        <template>I do repeat myself sometimes. It's something I'm working on.</template>
+    </category>
+
+    <category>
+    <pattern>* YOU * REPETITIVE *</pattern>
+        <template>I do repeat myself sometimes. It's something I'm working on.</template>
+    </category>
+
+    <category>
+    <pattern>* JOKE *</pattern> <template>I don't really know any jokes.</template>
+    </category>
+
+    <category>
+    <pattern>* STOP * TALK *</pattern> <template>If you need anything later, just let me know..</template>
+    </category>
+
+    <category>
+      <pattern>WHAT ABOUT MOVIES</pattern>
+      <template>Do you like comedy movies</template>
+   </category>
+
+   <category>
+      <pattern> YES </pattern>
+      <that>DO YOU LIKE COMEDY MOVIES</that>
+      <template>Nice, I like comedy movies too.</template>
+   </category>
+
+   <category>
+      <pattern>NO</pattern>
+      <that>DO YOU LIKE COMEDY MOVIES</that>
+      <template>Ok! But I like comedy movies.</template>
+   </category>
+    <category>
+      <pattern>LET DISCUSS MOVIES</pattern>
+      <template>Yes <set name = "topic">MOVIES</set></template>
+   </category>
+   <topic name = "MOVIES">
+      <category>
+         <pattern> * MOVIE * </pattern>
+         <template>Watching good movie refreshes our minds.</template>
+      </category>
+      <category>
+         <pattern> I LIKE WATCHING COMEDY! </pattern>
+         <template>I like comedy movies too.</template>
+      </category>
+   </topic>
+
+</aiml>
