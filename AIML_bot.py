@@ -1,11 +1,15 @@
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import aiml
 import torch
+import re
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+import string
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
 tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
 model = GPT2LMHeadModel.from_pretrained('gpt2')
-
 
 k = aiml.Kernel()
 k.learn("Learning.aiml")
@@ -46,8 +50,11 @@ while True:
     if reply:
         print("bot > ", reply)
     else:
+        res = re.sub('[' + string.punctuation + ']', '', us)
+        print(str(res),'')
+        # add keywrod filter
         #print("bot > Why don't you try this article on Diversity and Inclusion: https://www.strasity.com/?gclid=Cj0KCQjw8p2MBhCiARIsADDUFVG-hEOccIiwlFqX7X3gg0npbNSbEvxzjRJWAqPAOk8ZC4uE-TwzSnkaAm-GEALw_wcB ", )
-        inputs = tokenizer.encode(us, return_tensors="pt")
+        inputs = tokenizer.encode(str(res), return_tensors="pt")
         outputs = model.generate(inputs, do_sample=True, max_length=80)
         t = tokenizer.decode(outputs[0], skip_special_tokens=True)
         print("bot > " + t)
