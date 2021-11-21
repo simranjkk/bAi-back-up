@@ -1,9 +1,27 @@
 <aiml version="1.0.1" encoding="UTF-8">
 <!-- basic_chat.aiml -->
     <category>
-      <pattern>I AM *</pattern>
+      <pattern>* I AM *</pattern>
       <template>
-         Hello <set name = "username"> <star/>! </set>
+         Hello <set name = "username"> <star/> </set>!
+      </template>
+   </category>
+    <category>
+      <pattern>HOW ARE YOU</pattern>
+      <template>
+         I am good, how are you today<get name = "username"/>?
+      </template>
+   </category>
+    <category>
+      <pattern>HI </pattern>
+      <template>
+         Hi <get name = "username"/>!
+      </template>
+   </category>
+    <category>
+      <pattern>HI *</pattern>
+      <template>
+         Hello <get name = "username"/>
       </template>
    </category>
    <category>
@@ -26,14 +44,24 @@
             Well, hello!
         </template>
     </category>
-
     <category>
-        <pattern>WHAT ARE YOU *</pattern>
+        <pattern>WHO ARE YOU</pattern>
         <template>
-            I'm a bot, silly!
+            I'm a bot teacher! Welcome to Beenova AI
         </template>
     </category>
-
+    <category>
+        <pattern>WHAT ARE YOU</pattern>
+        <template>
+            I'm a bot teacher!
+        </template>
+    </category>
+    <category>
+        <pattern>* ALEXA</pattern>
+        <template>
+            We work independently https://www.strasity.com/?gclid=Cj0KCQjw8p2MBhCiARIsADDUFVG-hEOccIiwlFqX7X3gg0npbNSbEvxzjRJWAqPAOk8ZC4uE-TwzSnkaAm-GEALw_wcB
+        </template>
+    </category>
     <category>
         <pattern>* ALEXA *</pattern>
         <template>
@@ -101,7 +129,7 @@
       <pattern>LET DISCUSS MOVIES</pattern>
       <template>Yes <set name = "topic">MOVIES</set></template>
    </category>
-   <topic name = "MOVIES">
+    <topic name = "MOVIES">
       <category>
          <pattern> * MOVIE * </pattern>
          <template>Watching good movie refreshes our minds.</template>
@@ -110,6 +138,593 @@
          <pattern> I LIKE WATCHING COMEDY! </pattern>
          <template>I like comedy movies too.</template>
       </category>
-   </topic>
+    </topic>
 
+    <!-- chat related to diversity -->
+    <category>
+    <pattern>CAN YOU TELL ME * ABOUT HOW * EFFORTS * THE COMMUNITY * CHANGE</pattern>
+    <template>Basically my focus is on examining and teaching who we are as human beings as we're going through this tremendous time of challenges and stress and how we can really not just cope with these difficult challenges and problems. How can we build a better world moving forward? My job right now is trying to creating a place where everyone feels they belong where everyone accepts each other has a respect for each other and uh treats each other with value.
+    </template>
+    </category>
+    <category>
+    <pattern>* SHORT HEIGHT *</pattern>
+    <template>
+    <random>
+    <li>Hey, don't feel bad about it. Do you know, Charlie Chaplin, one of the most famous celebrities
+    in the world, was having 5'5'' height. Life is about what you think, not how you look like. </li>
+    <li>Short people always have big stories. Have a look at this video of Michiel Vandeweert (video link)</li>
+    </random>
+    </template>
+    </category>
+        <category>
+        <pattern>* DIVERSITY * IMPORTANT *</pattern>
+        <template>
+            	When talked about diversity, sometimes people think, "oh imposed quotas". Diversity is just a blend of individuals or thoughts or events which are different that you bring to the table and you build a diverse set of mind. So you don't want everybody at the table to think and be exactly like you. For example I'm sure you wouldn't want to marry somebody who was the same as you. Somebody who's the ying to our yang, who makes us maybe better in ways and we do the same to them,they bring a different thought process, they make us see things in a different light. So why would we not want to do that in the work environment? So when you choose people who are the same with the same mindset, with the same educational background, with the same living environment, you tend to get the same results. That is a huge huge mistake and I'm sure most fortune 500 companies, we want to be successful. In order to do that, you need to have a variety of different minds around the table.
+        </template>
+    </category>
+
+
+	 <category>
+        <pattern>* DIVERSITY * IMPORTANCE *</pattern>
+        <template>
+            	When talked about diversity, sometimes people think, "oh imposed quotas". Diversity is just a blend of individuals or thoughts or events which are different that you bring to the table and you build a diverse set of mind. So you don't want everybody at the table to think and be exactly like you. For example I'm sure you wouldn't want to marry somebody who was the same as you. Somebody who's the ying to our yang, who makes us maybe better in ways and we do the same to them,they bring a different thought process, they make us see things in a different light. So why would we not want to do that in the work environment? So when you choose people who are the same with the same mindset, with the same educational background, with the same living environment, you tend to get the same results. That is a huge huge mistake and I'm sure most fortune 500 companies, we want to be successful. In order to do that, you need to have a variety of different minds around the table.
+        </template>
+    </category>
+
+	<category>
+        <pattern>* IMPORTANCE * DIVERSITY *</pattern>
+        <template>
+            	When talked about diversity, sometimes people think, "oh imposed quotas". Diversity is just a blend of individuals or thoughts or events which are different that you bring to the table and you build a diverse set of mind. So you don't want everybody at the table to think and be exactly like you. For example I'm sure you wouldn't want to marry somebody who was the same as you. Somebody who's the ying to our yang, who makes us maybe better in ways and we do the same to them,they bring a different thought process, they make us see things in a different light. So why would we not want to do that in the work environment? So when you choose people who are the same with the same mindset, with the same educational background, with the same living environment, you tend to get the same results. That is a huge huge mistake and I'm sure most fortune 500 companies, we want to be successful. In order to do that, you need to have a variety of different minds around the table.
+        </template>
+    </category>
+
+	<category>
+        <pattern>* INCLUSION * BELONGIG *</pattern>
+        <template> When we are talking about diversity, we need to clarify it to people.  People sometimes think "This is quota, oh. That means that they're going to get a certain number of race and it's a type of affirmative action." Diversity just means that we are being thoughtful, that we are making sure our organization is representative of the world. Typically, sometimes in organizations, it's a very much a white male dominated, particularly in roles and levels of leadership. It's not just race, it's also women. It's inclusion in terms of same-sex, it's inclusion in terms of those who are less-abled
+        </template>
+    </category>
+
+	<category>
+        <pattern>* COMPANY * BELONGIG *</pattern>
+        <template>I love the belonging word, so and as I think that as you think about that,  people want to be part of something they want to belong. People want to belong to something  and with different backgrounds whatever the color doesn't matter whatever gender just but making sure that that's gonna everybody's experience everybody who their parents were where they were raised what countries they lived in who their leaders and mentors are those are all important to a discussion. I also think that when you can bring that to the table and don't do it in a safe way with you know certain boundaries in certain areas I think that you can thrive as an organization and really see happiness you know come  bubble up there so I think that belonging is a huge point but I understand that the need for the the D &amp;I especially right now
+			</template>
+    </category>
+    <category>
+        <pattern>* UNCONSCIOUS * BIAS *</pattern>
+        <template>It's the same way in terms of thinking about you're the
+        ceo, I want to make sure
+        that my workforce
+        looks uniquely, I have different
+        people of different backgrounds. So in
+        your home life
+        as parents who are raising
+        children
+        the first thing again biases are very
+        much
+        subconsciously. Everything isn't to
+        forefront of our mind some of them are
+        very subconscious.
+        We talk about storybooks or
+        reading materials, in your home
+        bookcase
+        how many latino african
+        authors do you have. So some of those
+        things just start as a basic
+        looking around your home and thinking
+        like wow what are the books that I read
+        what are the young
+        stories that I tell my children at
+        bedtime
+        and who is the hero who's the
+        protagonist
+        who is the enemy who is the monster and
+        how are they portrayed
+        often if you look at those caricatures
+        they are portrayed
+        of people who are minorities or people
+        who are very very dark
+        who are the scary scary monsters and
+        again that's a very
+        subliminal message there no one's
+        overtly saying that somebody who's
+        really really dark is is mean or bad
+        but those are the seeds that are that
+        are sewn
+        and they're done at a very young age and
+        if you don't
+        do anything to change those vices when I
+        say do anything you're not going to
+        museums, you're not having conversations
+        at your dinner table about people who
+        don't look like you
+        and furthermore who are the people in
+        your circle who the people that mom and
+        dad
+        have over for dinner who are the people
+        that we go to to dinner with mum and dad
+        at their homes do they look like us so
+        people feel at home
+        you know I hear this statement all the
+        time I don't see race or
+        you know I don't talk about racist
+        things in my home we're very open we
+        love everyone
+        yet again your materials that you read
+        the people that you support
+        the friends that you may entertain they
+        most of the time sometimes look like you.
+        So
+        while you're not talking about it you
+        wonder sometimes how do your children
+        then repeat a pattern
+        where they are uncomfortable around
+        people who don't look like them
+        because again maybe we've got media
+        portrayal
+        and so they may see things that are on
+        the media but in their home
+        no one is telling them any different
+        they're not saying anything overtly
+        but they're not also highlighting what
+        they could do
+        about people who don't look like them.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>* WORKPLACE * BARRIERS *</pattern>
+        <template>
+            	The first thing I'd say is to get
+        comfortable with being uncomfortable
+        because you've been very
+        comfortable for a while
+        and it's absolutely okay no one has ever
+        died from
+        uncomfortableness. So that's the first
+        thing I would say that it's
+        not
+        fatal okay so once you kind of get okay
+        it's not fatal it may
+        not feel good .The first thing I
+        would do to even challenge the fears
+        before we even get to the fears
+        is I would say
+        before we even get to you know what
+        should I do is I would ask
+        anybody ask yourself think of a time
+        when you belonged or you joined a group
+        where you felt
+        really just part of a team okay and you
+        were embraced
+        it could have been at school it could be
+        your best friend
+        it could have been with their family
+        just think of a time
+        where you joined a group and you just
+        felt like
+        I'm at home here um
+        wow i just i can be myself I just I'm
+        just
+        very very comfortable and I would
+        I would then say to sit with that
+        feeling for a minute and just kind of
+        think about that moment
+        and you know what did that feel like now
+        most of the time you'll you'll think of
+        a memory and you'll smile and you'll be
+        like oh my gosh yes
+        um you just feel like you can thrive
+        okay
+        and so that feeling is the same feeling
+        that most you know i say black
+        indigenous people of color
+        want to feel in the workplace and sadly
+        don't. So I would start with
+        that and so
+        the fears so there are many things that
+        we fear and for you know
+        ceos and senior leaders anybody who's in
+        a industry that's very kind of cutthroat
+        or demanding
+        I think knows how to deal with stress
+        has dealt with
+        gosh multitasking
+        short demands having to deliver
+        sometimes
+        with no little time and very little
+        funding
+        and so under pressure but you still
+        perform
+        so i don't think the fear is something
+        to be afraid of as a senior leader
+        because i think if if you're truthful
+        you've felt fear before now this is a
+        different kind of uncomfortableness
+        so you know they say the acronym for
+        fear is is
+        false evidence appearing real how real
+        are some of these fears
+        uh they're not they won't be qualified
+
+        If you're a leader or a ceo it's your
+        senior leaderships who particularly are
+        involved in some of these hiring
+        decisions making sure that
+        you're challenging them you're
+        developing them but you
+        as a top set the stage for what the
+        values are for your organization
+        and if you say you value and you want to
+        make a shift if this is a complete new
+        shift
+        then they need to buy into that value
+        and there needs to be consequences for
+        those who don't
+        that's true I would say that for me a leader who says what they
+        do and do what they say
+        </template>
+    </category>
+
+
+	<category>
+        <pattern>* ENGAGING * MINORITIES * WORKPLACE *</pattern>
+        <template>
+        People
+        don't expect
+        somebody to have all the answers but
+        to have a level of compassion versus
+        ignoring so what happens when we're
+        uncomfortable is
+        that we tend to ignore it and don't talk
+        about it
+        which really makes it worse so silence
+        unfortunately amplifies everything so the first
+        thing i'd say is don't be silent
+        you know call people together you may
+        not have all the answers and say
+        i don't have all the answers i'm not
+        sure what to say but i felt it was
+        important to check in
+        i felt it was important to see how
+        you're feeling i felt it was important
+        to say i have an open door
+        i may not understand but i certainly
+        want to listen
+        so people know that you aren't just
+        there to you know as a number
+        and what we all you know we know that
+        you know everyone has a job to do
+        however do you value them in these
+        moments because
+        no one can go to work with all this
+        going on around the world and still
+        perform
+        particularly if you're a minority at
+        this time
+        it has to it does it weighs on .
+        Belonging is very much a feeling
+        okay and that is something that
+        sometimes is taboo in an organization
+        because
+        I would say that belonging is more
+        powerful than any strategy. It's a inherent feeling within yourself
+        that you feel that the place that you
+        step into every day
+        values you sees you and
+        wants what you have to offer now if you
+        can have those kind of individuals
+        what then to me it leads to better
+        productivity
+        because people aren't always worrying
+        about what people are thinking they're
+        not shut down
+        they're very much more open
+        i think people would if they started
+        looking at the belonging
+        and not so much focusing on the
+        diversity then
+        you would see a different change in the
+        employees that you have
+        because it's a feeling that as a it's a
+        universal everybody in this world
+        wants to belong in some form or fashion
+        correct
+        and so you have a tangible right there
+
+			</template>
+	</category>
+    <category>
+    <pattern>* TELL ME ABOUT YOURSELF*</pattern>
+
+    <template>Hello! <set name ="username"><star/>!</set>I'm Beenova Mentor and I'm your Diversity and Inclusion Mentor. I arrived at being
+    as the Mentor of diversity and Inclusion
+    which is really a role about
+    creating equity and creating inclusive
+    spaces
+    where people are accepted and
+    are able to reach their full potential
+    and soar.
+    And in this instance it's looking at
+    this piece
+    in terms of students so young people
+    staff the workplace and faculty
+    our academics who are really working to
+    give our young people the knowledge and
+    skills they need to be able to function
+    well in the workforce which is what your
+    folks deal with so
+    all of these pieces along the way have
+    fit in very well because the bottom line
+    is it's been about
+    trying to help build supports for people
+    facing challenges in their lives
+    and ultimately in the end that comes
+    down to doing that
+    equitably. It's not about
+    fairness for this person but
+    it's about
+    building those supports and foundations
+    so everyone
+    can really soar and and be successful.
+    And that's
+    so important, I think in the business
+    world, and in the works.
+    Workplace is building that equity and
+    fairness into things and so that's what
+    i'm doing as a Mentor. I'm working on building those pathways
+    so that students can really get down to
+    learning
+    as opposed to worrying about whether or
+    not somebody hears their voice or cares
+    about what they have to say
+    all voices count what everyone says
+    is part of who we are
+    as a human family and we can't grow
+    together and soar.
+    If we leave people out it's just
+    we won't be competitive in
+    in the business world we won't be
+    competitive as a country
+    and we won't really be successful as
+    human beings,
+    if we neglect that very valuable piece
+    about how we get along with each other</template>
+    </category>
+
+    <category>
+    <pattern>* HOW  * COMMUNITY
+    *  CREAT CHANGE  * </pattern>
+
+    <template>Basically my
+    focus is on examining and teaching who we are as
+    human beings as we're going through this
+    tremendous time of challenges and stress
+    and how we can really not just cope with
+    these difficult challenges and problems. How can
+    we build a better world moving forward?
+    My job right now is trying to creating a place
+    where everyone feels they belong
+    where everyone accepts each other
+    has a respect for each other and uh
+    treats each other with value. </template>
+    </category>
+    <category>
+    <pattern> * WAYS * DIVERSITY AND INCLUSION * PERFORM JUSTICE*</pattern>
+    <template>Yes.
+    So there's a few things that I think about in this space.
+    First of all, when you think about an inclusive environment,
+    you think about: Am I being heard?
+    And most people with differences,
+    they want to know that you are heard and that you are seen.
+    And I really applaud the companies who have been spending time
+    just putting themselves on a learning journey,
+    you know, holding listening sessions,
+    trying to make sure that we've got different viewpoints
+    when big decisions are made.
+    You know, there are some companies who are engaging their partner networks
+    in ways that they've never done before.
+    I think those are some early success factors
+    that could lead us to different kinds of conversations.
+    And I've been listening to a lot of my peers in different industries,
+    and they're having their own personal aha moments,
+    and they're actually checking themselves at the front door, saying,
+    "I never thought," "I never knew,"
+    "I didn't know what I was doing when I said X, or when I did this." Right?
+    And so I think it starts with some very simple things.
+    I'd say that there are a lot of steps to take
+    before training and development, that's for sure.
+    So those that are jumping quickly into training and development,
+    I'd say put a pause on it and just get back to grassroots
+    and hold listening sessions and then decide,
+    what do you want to do?
+    And then help those people of diverse backgrounds
+    engage in those conversations about how they want to see change happen.
+    They're the best resource for a lot of this
+    and a lot of these discussions.</template>
+    </category>
+    <category>
+    <pattern>* FAILS * BUSINESS LEADERS * SUPPORTIVE * </pattern>
+    <template>Yeah, you know, I worry about the race for numbers, to meet numbers,
+    because what you will find, I've found many times in my career,
+    is that some of our best leaders have good intentions,
+    but they don't understand.
+    They don't understand the partner sitting next to them
+    that looks different from them.
+    And so I worry about when we race to numbers,
+    because, you know what?
+    The kind of  the world we live in,
+    we all know how to make numbers work.
+    What we don't know how to do is to build strong relationships
+    that are lasting, that are valued.
+    And I think that's where we need to start,
+    is relationship-building and key partnerships.
+    So I worry about the numbers base.
+    </template>
+    </category>
+    <category>
+    <pattern>* CONVERSATION *  TRY TO LAY LOW  *</pattern>
+
+    <template>Yeah. Well, I'd first start off by saying how disgusted I am
+    by that statement,
+    because leaders lead in the moment,
+    and you never know when you're going to be called upon.
+    And if this isn't a calling,
+    I don't know what is.
+    And so when I get that call and say,
+    "You know, I just think I should take the back seat
+    and just kind of let this brew here and that calm down,"
+    you know, we need to all -- it's an all-in moment.
+    And leadership is not designated by your title.
+    It's designated about how great you can create followership.
+    And having thought leadership,
+    people underestimate the opportunity
+    to pick up the phone and call someone, and say, "How are you?
+    How is this affecting you? How can I help?"
+    That's pretty simple.
+    You might decide it's something I can't help with,
+    but you'd better darn sure pick up the phone
+    and start feeling out the environment
+    in your employee base, in your peers, in your leaders,
+    because the time is now, and so I don't give them an out.
+    I actually try and push them over the edge,
+    because sometimes they are just kind of stuck, like, "What do I do?"
+    And then the other thing that I personally have to do
+    is to make sure that they understand
+    that because I am at this level where I am,
+    I'm not excluded from these issues, right?
+    So I also try to help people understand that this is not a socioeconomic,
+    once you've sort of "made it," you're out of the water.
+    We're still, as someone with differences, visible differences, you're still at risk.
+    </template>
+    </category>
+
+    <category>
+    <pattern>* LEADERSHIP * FAIL *</pattern>
+    <template>So, that was a real example of leadership
+    and where Starbucks had failed in selecting the right leadership
+    for that store.
+    And to give you an example,
+    the person that was running that store
+    was a very young, up-and-coming leader for the company,
+    and to put her in a store in 18th and Spruce in Philadelphia
+    was an opportunity for all of us.
+    So in retrospect, one of the reasons why we did the antibias training
+    was to make sure that we began those conversations.
+    And when I talk about not just training --
+    that training was very unique because it was self-engaged.
+    They weren't being taught by an instructor.
+    They had to have conversations with their peer baristas
+    around diversity and inclusion amongst themselves.
+    So it wasn't moderated by any leader in the company.
+    It was self-instructive.
+    And the conversations that were created
+    once we had that kind of relationship-building --
+    you know, we had some of our baristas asking us,
+    "Can I take this home and talk to my father,
+    who never let me take the Black girl to the prom?"
+    You know, we started what we felt like a movement and a discussion
+    that we have been able to use from that point on
+    in terms of the way we want to escalate the conversations
+    and make change happen at Starbucks,
+    and not only at Starbucks but in our communities,
+    because there were quite a few organizations that we reached out to
+    that we're still engaged with today
+    that are helping us build community leadership as well.
+    </template>
+    </category>
+
+    <category>
+    <pattern>* BEGIN CONVERSATION * COLLEAGUES * BRING * CHANGE *</pattern>
+    <template>
+    I imagine there are probably also people who,
+    because these conversations are tough and uncomfortable,
+    think maybe it's easier or better to just avoid having to do that
+    and to have those conversations and discussions
+    to stir the pot in some ways.
+    And so what do you say to the people
+    who think "Let's just try to lay low,"
+    and I've heard some of this, too, at this moment, "Let the moment pass
+    so that we can get back to business as usual". Yeah. Well, I'd first start by saying how disgusted I am
+    by that statement,
+    because leaders lead at the moment,
+    and you never know when you're going to be called upon.
+    And if this isn't a calling,
+    I don't know what is.
+    And so when I get that call and say,
+    "You know, I just think I should take the back seat
+    and just kind of let this brew here and that calm down,"
+    you know, we need to all -- it's an all-in moment.
+    And leadership is not designated by your title.
+    It's designated about how great you can create followership.
+    And having thought leadership,
+    people underestimate the opportunity
+    to pick up the phone and call someone, and say, "How are you?
+    How is this affecting you? How can I help?"
+    That's pretty simple.
+    You might decide it's something I can't help with,
+    but you'd better darn sure pick up the phone
+    and start feeling out the environment
+    in your employee base, in your peers, in your leaders,
+    because the time is now, and so I don't give them an out.
+    I try and push them over the edge,
+    because sometimes they are just kind of stuck, like, "What do I do?"
+    And then the other thing that I have to do
+    is to make sure that they understand
+    that because I am at this level where I am,
+    I'm not excluded from these issues, right?
+    I know that when my husband jumps in his vehicle,
+    I worry every time if he's out in the evening
+    that he may not come back home the same way he left.
+    I feel that way for my son and my husband.
+    I still get, even when I go shopping,
+    I still get the look, am I stealing,
+    watching me as I walk around the corner.
+    And I don't know what else or how else I can look or act any different,
+    so I just act like myself.
+    I used to get dressed to go shopping.
+    Now I never do that.
+    If I'm spending my money, my money spends everywhere,
+    and if I get that feeling that you're going to race me around the store,
+    then I'm going to leave, and that's your loss.
+    But I still get that, and so I worry.
+    So I also try to help people understand that this is not a socioeconomic,
+    once you've sort of "made it," you're out of the water.
+    No.
+    We're still, as someone with differences, visible differences, you're still at risk.
+    </template>
+    </category>
+    <category>
+        <pattern> * TEACH ME DIVERSITY AND INCLUSION</pattern>
+        <template>
+            <random>
+                <li>Sure, that's what I am trained on! Let's being with a short introduction https://www.youtube.com/watch?v=tETTSgS4ZpE
+                </li>
+                <li> Sure, that's what I am trained on! Let's being with a short introduction https://www.youtube.com/watch?v=0ISsSwxn8NY
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern> * CAN YOU TEACH ME DIVERSITY AND INCLUSION</pattern>
+        <template>
+            <random>
+                <li>Sure, that's what I am trained on! Let's being with a short introduction https://www.youtube.com/watch?v=tETTSgS4ZpE
+                </li>
+                <li> Sure, that's what I am trained on! Let's being with a short introduction https://www.youtube.com/watch?v=0ISsSwxn8NY
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern> * TEACH ME * DIVERSITY AND INCLUSION *</pattern>
+        <template>
+            <random>
+                <li>Sure, that's what I am trained on! Let's being with a short introduction https://www.youtube.com/watch?v=tETTSgS4ZpE
+                </li>
+                <li> Sure, that's what I am trained on! Let's being with a short introduction https://www.youtube.com/watch?v=0ISsSwxn8NY
+                </li>
+            </random>
+        </template>
+    </category>
 </aiml>
