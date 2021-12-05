@@ -3,7 +3,7 @@
         <pattern>LEARN AIML</pattern>
         <template>
             <!-- Load standard AIML set -->
-            <learn>conversation.aiml</learn>
+            <learn>DiversityAndInc.aiml</learn>
         </template>
     </category>
 </aiml>
